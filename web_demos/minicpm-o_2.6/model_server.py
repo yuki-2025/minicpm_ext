@@ -53,9 +53,11 @@ def setup_logger():
 app = FastAPI()
 logger = setup_logger()
 
+model_path = "/ai-video-sh/chang.yin/new/models/MiniCPM-o-2_6"
+
 ap = argparse.ArgumentParser()
 ap.add_argument('--port', type=int , default=32550)
-ap.add_argument('--model', type=str , default="openbmb/MiniCPM-o-2_6", help="huggingface model name or local path")
+ap.add_argument('--model', type=str , default=model_path, help="huggingface model name or local path")
 args = ap.parse_args()
 
 

@@ -22,10 +22,11 @@ import modelscope_studio as mgr
 # For Nvidia GPUs.
 # python chatbot_web_demo_o2.6.py
 
+model_path = "/ai-video-sh/chang.yin/new/models/MiniCPM-o-2_6"
 
 # Argparser
 parser = argparse.ArgumentParser(description='demo')
-parser.add_argument('--model', type=str , default="openbmb/MiniCPM-o-2_6", help="huggingface model name or local path")
+parser.add_argument('--model', type=str , default=model_path, help="huggingface model name or local path")
 parser.add_argument('--multi-gpus', action='store_true', default=False, help='use multi-gpus')
 args = parser.parse_args()
 device = "cuda"
