@@ -2,7 +2,7 @@ import os
 os.environ["HF_ENDPOINT"] = "https://hf-mirror.com"
 from huggingface_hub import snapshot_download 
 from huggingface_hub import login
-login(token='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')
+login(token=' ')
 # Set the model repo name
 repo_id = "openbmb/MiniCPM-o-2_6"
 # "deepseek-ai/DeepSeek-R1-Distill-Qwen-32B"  # ID of the model repository
